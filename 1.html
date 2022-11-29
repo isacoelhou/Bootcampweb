@@ -1,0 +1,75 @@
+<table>
+    <caption>
+      Exercicio exemplo de tabela
+    </caption>
+    <colgroup>
+        <col style="background-color: red" />
+        <col style="background-color: gray" span="2" />
+    </colgroup>
+    <thead>
+        <th scope="col">Cabeçalho 1</th>
+        <th id="col2">Cabeçalho 2</th>
+        <th scope="col">Cabeçalho 3</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1x1</td>
+            <td headers="col2">1x2</td>
+            <td>1x3</td>
+        </tr>
+
+        <tr>
+            <td>2x1</td>
+            <td headers="col2">2x2</td>
+            <td rowspan="2">
+                2x3 <br />
+                3x3
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                3x1
+            </td>
+            <td headers="col2">3x2</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">
+                <table>
+                    <thead>
+                    <th scope="col">4x1 col</th>
+                    <th scope="col">4x2 col 2</th>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Item 1 </td>
+                    <td>Item 2 </td>
+                </tr>
+                <tr>
+                    <td>Item 3 </td>
+                    <td>Item 4 </td>
+                </tr>
+               </table>
+
+                <td rowspan="2" colspan="2">
+                    4x2 4x3
+                </td>
+          
+            </tbody>
+                
+
+    </tbody>
+
+    <tfoot style="text-align: center;">
+        <tr>
+        <td> <strong> Result 1.1</strong></td>
+        <td><strong>Result  1.2 </strong></td>
+   
+    <td rowspan="2" ><strong>Result Final</strong></td>
+</tr>
+        <td><strong>Result 2.1</strong></td>
+        <td><strong>Result 2.2 </strong> </td>
+    </tfoot>
+   
+</table>
